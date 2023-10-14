@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/second">Second</a></li>
+      <li><a href="/calculator">Calculator</a></li>
+    </ul>
+    <h1>Calculator, lets make a division</h1>
+    <form method="POST" action="/calculate">
+      <label for="num1">Enter the numerator:</label>
+      <input type="text" id="num1" name="num1" required>
+      <br>
+      <label for="num2">Enter the denominator:</label>
+      <input type="text" id="num2" name="num2" required>
+      <br>
+      <input type="submit" value="Calculate">
+    </form>
+    <h2>Result: {{ result }}</h2>
+  </body>
+</html>
